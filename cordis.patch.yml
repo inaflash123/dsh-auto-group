@@ -1,0 +1,12 @@
+# dsh-auto-group bundle layer.
+#
+# 一行：挂载自动分组插件。它只做一件事——发现有新装的插件还没进任何
+# dshmarket 分组时，按能力关键词把它归进对应组；认不出的丢进「未分类」。
+#
+# 只做加法：往组里 append，从不把已有成员踢出去，所以你手工调整过的分组
+# 不会被它覆盖。删掉这一行与 package.json 的依赖即完全复原，
+# state.json 里已经分好的组原样保留。
+
+- insert:
+    - id: dsh-auto-group
+      name: dsh-auto-group
