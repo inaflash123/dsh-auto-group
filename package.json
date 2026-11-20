@@ -1,0 +1,37 @@
+{
+  "name": "dsh-auto-group",
+  "version": "0.1.1",
+  "description": "Auto-file newly installed plugins into dshmarket groups by capability — unknowns go to 未分类, and the groups you arranged by hand are never touched. · 新装的插件自动归进插件市场的分组，认不出的放进「未分类」，你手工调过的分组永远不被覆盖。",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "plugin-market",
+    "dshmarket",
+    "group",
+    "organize",
+    "categorize",
+    "auto"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
